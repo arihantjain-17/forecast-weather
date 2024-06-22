@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>weather app</h2>
+        <div class="tab-container">
+            <p class="tab" data-userweather>Your weather</p>
+            <p class="tab" data-searchweather>Search weather</p>
+        </div>
+        <div class="weather-container">
+
+            <!-- grant location container -->
+            <div class="grant-location">
+                <img src="location.png" alt="error" width="80" height="80" loading="lazy">
+                <p>Grant location access</p>
+                <p>Allow access to get weather info</p>
+                <button class="btn" data-grantaccess>grant access</button>
+            </div>
+            <!-- search form   -->
+            <form class="form-container" data-searchform >
+                <input type="text" placeholder="search for city" data-searchinput>
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <!-- loading screen container -->
+            <div class="loading">
+                <img src="loading.gif" alt="error" width="150"  height="80">
+                 <p>Loading</p>
+            </div>
+
+            <!-- weather info -->
+            <div class="weather-info-container">
+                <div class="name">
+                    <p data-cityname></p>
+                    <img data-country>
+                </div>
+                <p data-weatherdescription></p>
+                <img data-weathericon> 
+                <p data-temperature></p>
+
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="wind.jpg" alt="">
+                        <p>Windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="humidity.jpeg" alt="">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="cloud.jpeg" alt="">
+                        <p>cloudy</p>
+                        <p data-cloud></p>
+                    </div>
+                </div>
+                
+                 
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/54e273dba4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
