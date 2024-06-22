@@ -1,20 +1,7 @@
-/* 
-
-
-
-.tab.current-tab{
-    border-radius: 4px;
-    background-color: rgba(219, 226, 239, 0.5);
-}
-
-.form-container.active{
-    scale: 1;
-    opacity: 0;
-    display: flex;
-} */
- /* Root variables for easy theming */
+/* Root variables for easy theming */
 :root {
     --primary-color: #4CAF50;
+    --primary-color-dark: #388E3C;
     --secondary-color: #FFFFFF;
     --text-color: #333;
     --background-color: #F5F5F5;
@@ -30,6 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: dodgerblue;
 }
 
 .wrapper {
@@ -39,6 +27,7 @@ body {
     border-radius: var(--border-radius);
     width: 100%;
     max-width: 500px;
+    background-color: ;
 }
 
 h2 {
@@ -61,10 +50,11 @@ h2 {
     text-align: center;
     flex: 1;
     margin: 0 5px;
+    transition: background 0.3s;
 }
 
 .tab:hover {
-    background: darken(var(--primary-color), 10%);
+    background: var(--primary-color-dark);
 }
 
 .weather-container {
@@ -96,10 +86,11 @@ button.btn {
     border-radius: var(--border-radius);
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 button.btn:hover {
-    background: darken(var(--primary-color), 10%);
+    background: var(--primary-color-dark);
 }
 
 .form-container {
